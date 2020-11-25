@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>${{ cashonhand }}</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {% for position in positions %}
+            <tr>
+                <td>{{ position['symbol'] }}</td>
+                <td>{{ position['compname'] }}</td>
+                <td>{{ position['amount'] }}</td>
+                <td>${{ position['currprice'] }}</td>
+                <td>${{ position['totalcost'] }}</td>
+            <tr>
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>${{ actualcashonhand }}</td>
+            <tr>
+
+        </tbody>
+
+    </table>
+{% endblock %}

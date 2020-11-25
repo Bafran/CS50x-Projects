@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Cash Change</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {% for position in positions %}
+            <tr>
+                <td>{{ position['symbol'] }}</td>
+                <td>{{ position['time'] }}</td>
+                <td>{{ position['amount'] }}</td>
+                <td>${{ position['price'] }}</td>
+                <td>${{ position['totalcost'] }}</td>
+            <tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+{% endblock %}

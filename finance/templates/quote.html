@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action = "/quote" method = "POST">
+        <div class="form-group">
+            <input class="form-control" name="symbol" placeholder="Enter Stock Symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+        <br><br>
+        <p id="price">{{ price }}</p>
+    </form>
+{% endblock %}
