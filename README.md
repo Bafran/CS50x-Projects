@@ -1,3 +1,3 @@
-# Portfolio
+# Speller
 
-This contains work that I have done in the past, mostly along with a course.
+Speller loads a dictionary into memory, and uses a hash table to perform like a spell checker. The code I wrote is in dictionary.c, speller.c was given.
