@@ -1,3 +1,3 @@
-# Portfolio
+# Filter
 
-This contains work that I have done in the past, mostly along with a course.
+Fitler is basically what the name says, it takes in a picutre and outputs a filtered version. filter.c was given.
