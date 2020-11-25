@@ -1,3 +1,3 @@
 # Portfolio
 
-This contains work that I have done in the past, mostly along with a course.
+The code from the finance website is mainly written by me, but some stuff such as layout.html was given beforehand.
