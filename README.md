@@ -1,3 +1,3 @@
 # Portfolio
 
-This contains work that I have done in the past, mostly along with a course.
+Some of the projects in CS50x.
